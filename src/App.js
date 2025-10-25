@@ -29,7 +29,6 @@ export default function App() {
         onClick={toggleMusic} 
         audioRef={audioRef} 
       />
-      
       <HomeSection />
       <WelcomeSection />
       <CeremonySection />

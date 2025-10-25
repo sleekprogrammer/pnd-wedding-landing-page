@@ -17,15 +17,15 @@ export default function HomeSection() {
           <div className="home-overlay" />
         </div>
 
-        <div className="home-content">
-          <div className="home-date">
-            3 de outubro de 2026
+        <div className="home-frame">
+          <div className="home-frame-content">
+            <div className="home-date">
+              3 de outubro de 2026
+            </div>
+            <div className="home-icon-wrapper">
+              <img src={pnd} alt="Patricia&Decio" className="home-icon" />
+            </div>
           </div>
-          <div className="home-icon-wrapper">
-            <img src={pnd} alt="Patricia&Decio" className="home-icon" />
-          </div>
-          <div className="home-names" />
-          <div className="home-spacer" />
         </div>
       </div>
     </section>
