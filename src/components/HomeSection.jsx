@@ -7,7 +7,6 @@ export default function HomeSection() {
   return (
     <section className="section home-section" id="home">
       <div className="relative flex items-center justify-center w-full h-screen px-4">
-        {/* Background Image - local path */}
         <div 
           className="home-background"
           style={{
