@@ -1,3 +1,4 @@
+/* Ceremony Section */
 .ceremony-section-outer {
   min-height: 100vh;
   width: 100%;
@@ -67,7 +68,7 @@
   width: 210px;
   height: 120px;
   scale: 1.6;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
 }
 
@@ -86,7 +87,7 @@
   width: 64px;
   height: 58px;
   scale: 1.1;
-  margin: 35px auto 25px auto;
+  margin: 50px auto 40px auto;
 }
 
 .ceremony-address {

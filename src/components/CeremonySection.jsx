@@ -33,6 +33,7 @@ export default function CeremonySection() {
               Estreito de Câmara de Lobos
             </p>
           </div>
+
           <div className="ceremony-location-section">
             <a href="https://maps.app.goo.gl/q3imUmQyKUDqhmFX9" target="_blank" rel="noopener noreferrer">
               <img src={LocationIcon} alt="Location" className="ceremony-location-icon" />
