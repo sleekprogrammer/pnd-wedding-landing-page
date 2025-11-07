@@ -1,0 +1,97 @@
+/* Memories Section */
+.memories-section-outer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  background: transparent;
+  position: relative;
+}
+
+.memories-frame {
+  position: relative;
+  width: calc(100vw - 50px);
+  margin: 20px;
+  min-height: calc(100vh - 50px);
+  border: 1px solid #2D1C01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+  padding: 44px 15px 38px 15px;
+}
+
+.memories-frame-content {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+  gap: 16px; /* Adds more vertical space between blocks */
+}
+
+.memories-pd-icon {
+  width: 69px;
+  height: 69px;
+  margin-top: -10px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memories-title {
+  color: #452A00;
+  text-align: center;
+  font-family: 'Italiana', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 117.776%;
+  margin-bottom: 32px;
+}
+
+.memories-image-paper {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.memories-candles-icon {
+  width: 178px;
+  height: 173px;
+  scale: 1.3;
+  margin: 0 auto;
+  display: block;
+}
+
+.memories-text-paper {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 20px;
+  color: #48321A;
+  padding-left: -50px;
+  padding-right: -20px;
+}
+
+.memories-upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.memories-upload-icon {
+  width: 180px;
+  height: 172px;
+  scale: 1.2;
+  margin-bottom: 10px;
+}

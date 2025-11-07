@@ -1,0 +1,99 @@
+/* Confirmation Section */
+.confirmation-section-outer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  background: transparent;
+  position: relative;
+}
+
+.confirmation-frame {
+  position: relative;
+  width: calc(100vw - 50px);
+  margin: 25px;
+  min-height: calc(100vh - 50px);
+  border: 1px solid #2D1C01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+  padding: 44px 22px 38px 22px;
+}
+
+.confirmation-frame-content {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+  gap: 16px; /* Adds more vertical space between blocks */
+}
+
+.confirmation-pd-icon {
+  width: 69px;
+  height: 69px;
+  margin-top: -10px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-title {
+  color: #452A00;
+  text-align: center;
+  font-family: 'Italiana', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 117.776%;
+  margin-bottom: 32px;
+}
+
+.confirmation-image-paper {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.confirmation-flowers-icon {
+  width: 112px;
+  height: 109px;
+  scale: 1.4;
+  margin: 0 auto;
+  display: block;
+}
+
+.confirmation-text-paper {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 20px;
+  color: #48321A;
+}
+
+.confirmation-text-bold {
+  font-weight: 600;
+}
+
+.confirmation-envelop-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.confirmation-envelop-icon {
+  width: 174px;
+  height: 165px;
+  scale: 1.2;
+  margin-bottom: 10px;
+}
