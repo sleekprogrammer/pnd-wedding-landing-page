@@ -52,4 +52,8 @@
   .countdown-label {
     font-size: 0.9rem;
   }
+  .countdown-divider {
+    height: 30px;
+    margin-bottom: 16px;
+  }
 }

@@ -77,3 +77,12 @@
   scale: 1.2;
   margin-bottom: 10px;
 }
+
+/* Responsive tweak for narrower screens */
+@media (max-width: 400px) {
+  .countdown-pnd-icon {
+    width: 250px;
+    height: 258px;
+    scale: 1;
+  }
+}
