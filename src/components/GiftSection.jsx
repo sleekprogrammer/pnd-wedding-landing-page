@@ -16,17 +16,30 @@ export default function GiftSection() {
   };
 
   const copyToClipboard = () => {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(iban).then(() => {
-          showToast("IBAN copiado para a área de transferência!");
-        }).catch(() => {
-          showToast("Falha ao copiar o IBAN");
-        });
-      } else {
-        // Fallback for unsupported environments
-        showToast("Falha ao copiar o IBAN");
-      }
-  };
+  if (navigator.clipboard && window.isSecureContext) {
+    // Modern async clipboard API
+    navigator.clipboard.writeText(iban)
+      .then(() => showToast("IBAN copiado para a área de transferência!"))
+      .catch(() => showToast("Falha ao copiar o IBAN"));
+  } else {
+    // Legacy fallback for Safari/iOS
+    const textArea = document.createElement("textarea");
+    textArea.value = iban;
+    textArea.style.position = "fixed";  // Prevent scrolling to bottom
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+      const successful = document.execCommand('copy');
+      showToast(successful ? "IBAN copiado para a área de transferência!" : "Falha ao copiar o IBAN");
+    } catch (err) {
+      showToast("Falha ao copiar o IBAN");
+    }
+
+    document.body.removeChild(textArea);
+  }
+};
 
   return (
     <section className="gift-section-outer">
@@ -59,7 +72,7 @@ export default function GiftSection() {
                 onTouchStart={copyToClipboard}
                 role="button"
                 tabIndex={0}
-                aria-label="Copiar IBAN para a área de transferência"
+                aria-label="Copiar IBAN"
               >
                 <span className="gift-text-iban">
                   {iban}<br />
