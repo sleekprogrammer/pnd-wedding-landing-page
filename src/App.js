@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './styles/fonts.css';
 import './styles/Wedding.css';
-import './styles/NextSection.css';
 import './styles/HomeSection.css';
 import './styles/WelcomeSection.css';
 import './styles/CeremonySection.css';
@@ -10,9 +9,10 @@ import './styles/ConfirmationSection.css';
 import './styles/GiftSection.css';
 import './styles/MemoriesSection.css';
 import './styles/FinalSection.css';
+import './styles/CountdownSection.css';
+import './styles/CountdownClock.css';
 
 import MusicPlayer from './components/MusicPlayer';
-import NextSection from './components/NextSection';
 import HomeSection from './components/HomeSection';
 import WelcomeSection from './components/WelcomeSection';
 import CeremonySection from './components/CeremonySection';
@@ -21,6 +21,7 @@ import ConfirmationSection from './components/ConfirmationSection';
 import GiftSection from './components/GiftSection';
 import MemoriesSection from './components/MemoriesSection';
 import FinalSection from './components/FinalSection';
+import CountdownSection from './components/CountdownSection';
 
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -52,7 +53,7 @@ export default function App() {
       <GiftSection />
       <MemoriesSection />
       <FinalSection />
-      <NextSection />
+      <CountdownSection />
     </div>
   );
 }
