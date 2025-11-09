@@ -94,6 +94,62 @@
   font-weight: 600;
 }
 
+/* Responsive style: adjust image height and content padding for wide, low screens */
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .welcome-image-torn-top {
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 35vh;        /* Lower height (tweak as you like!) */
+    min-height: 180px;   /* Prevent image from being too short */
+    max-height: 300px;
+    object-fit: cover;   /* Ensures entire edge is visible */
+  }
+  .welcome-frame-content {
+    padding-top: 34vh;     /* Must clear image height + torn offset */
+  }
+}
+/* TODO: fix ipad mini image height */
+
+/* Responsive style: adjust image height and content padding for tablets */
+@media (min-width: 700px) and (max-width: 1200px) {
+  .welcome-image-torn-top {
+    margin-top: -18px;
+    height: 44vh;            /* Reduce height for tablets */
+    min-height: 320px;
+    max-height: 480px;
+  }
+  .welcome-frame-content {
+    padding-top: 48vh;       /* Must match or slightly exceed image height */
+    margin-top: 130px;
+  }
+}
+
+@media (min-height: 720px) {
+  .welcome-image-torn-top {
+    margin-top: -5px;
+    height: 44vh;
+    width: 50vh;
+    min-height: 320px;
+    max-height: 480px;
+  }
+}
+
+/* Responsive style: adjust image height and content padding for tall, narrow screens */
+@media (min-height: 940px) and (max-width: 1200px) {
+  .welcome-image-torn-top {
+    margin-top: -18px;
+    height: 44vh;
+    width: 70vh;
+    min-height: 320px;
+    max-height: 480px;
+    scale: 1.05;
+  }
+  .welcome-frame-content {
+    padding-top: 48vh;       /* Must match or slightly exceed image height */
+  }
+}
+
 /* Responsive style: make image taller and content lower for smaller screens */
 @media (max-width: 900px) {
   .welcome-frame {
