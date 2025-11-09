@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './styles/fonts.css';
 import './styles/Wedding.css';
 import './styles/HomeSection.css';
@@ -24,26 +24,45 @@ import FinalSection from './components/FinalSection';
 import CountdownSection from './components/CountdownSection';
 
 export default function App() {
+  const audioRef = useRef();
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
 
-  const toggleMusic = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
+  const togglePlayPause = () => {
+    if (!audioRef.current) return;
+    if (audioRef.current.paused) {
+      audioRef.current.play().then(() => setIsPlaying(true));
+    } else {
+      audioRef.current.pause();
+      setIsPlaying(false);
     }
   };
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.5;
+    }
+
+    const playAudioOnInteraction = () => {
+      if (audioRef.current && audioRef.current.paused) {
+        audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+        document.removeEventListener("click", playAudioOnInteraction);
+        document.removeEventListener("touchstart", playAudioOnInteraction);
+      }
+    };
+    document.addEventListener("click", playAudioOnInteraction, { once: true });
+    document.addEventListener("touchstart", playAudioOnInteraction, { once: true });
+    return () => {
+      document.removeEventListener("click", playAudioOnInteraction);
+      document.removeEventListener("touchstart", playAudioOnInteraction);
+    };
+  }, []);
 
   return (
     <div className="wedding-container">
       <MusicPlayer 
-        isPlaying={isPlaying} 
-        onClick={toggleMusic} 
         audioRef={audioRef} 
+        isPlaying={isPlaying} 
+        onClick={togglePlayPause} 
       />
       <HomeSection />
       <WelcomeSection />

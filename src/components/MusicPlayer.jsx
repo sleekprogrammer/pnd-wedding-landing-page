@@ -1,6 +1,8 @@
 import React from 'react';
 import { Pause, Play } from 'lucide-react';
 
+import Song from '../assets/music/Alex Warren - Ordinary.mp3';
+
 export default function MusicPlayer({ isPlaying, onClick, audioRef }) {
   return (
     <>
@@ -13,8 +15,7 @@ export default function MusicPlayer({ isPlaying, onClick, audioRef }) {
       </button>
 
       <audio ref={audioRef} loop>
-        {/* Add your music source here */}
-        {/* <source src="/path-to-music.mp3" type="audio/mpeg" /> */}
+        <source src={Song} type="audio/mp3" />
       </audio>
     </>
   );
