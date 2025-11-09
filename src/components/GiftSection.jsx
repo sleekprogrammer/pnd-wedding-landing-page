@@ -65,13 +65,11 @@ export default function GiftSection() {
             </p>
 
             <p>
-              <div
+              <button
+                type="button"
                 className="gift-iban-wrapper"
-                style={{ cursor: "pointer" }}
                 onClick={copyToClipboard}
-                onTouchStart={copyToClipboard}
-                role="button"
-                tabIndex={0}
+                onTouchEnd={copyToClipboard}  
                 aria-label="Copiar IBAN"
               >
                 <span className="gift-text-iban">
@@ -80,7 +78,7 @@ export default function GiftSection() {
                 <span className="gift-text-aux">
                   (toque para copiar)
                 </span>
-              </div>
+              </button>
             </p>
           </div>
           <div id="toast" className="toast"></div>
