@@ -23,10 +23,7 @@ export default function ConfirmationSection() {
               convosco neste dia tão especial! <br />
               <br />
               Confirmem a vossa presença até <br />
-              <span className="confirmation-text-bold">
-                31 de julho de 2026 
-              </span>
-              e deixem-nos <br />
+              <span className="confirmation-text-bold">31 de julho de 2026 </span> e deixem-nos <br />
               também duas músicas que gostariam
               de ouvir (e dançar)!
             </p>

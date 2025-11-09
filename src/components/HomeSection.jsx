@@ -1,7 +1,7 @@
 import React from 'react';
 
 import homeBg from '../assets/images/home-bg.jpg';
-import pnd from '../assets/icons/pnd.svg';
+import Pnd from '../assets/icons/pnd.svg';
 
 export default function HomeSection() {
   return (
@@ -22,7 +22,7 @@ export default function HomeSection() {
               3 de outubro de 2026
             </div>
             <div className="home-icon-wrapper">
-              <img src={pnd} alt="Patricia&Decio" className="home-icon" />
+              <img src={Pnd} alt="Patricia&Decio" className="home-icon" />
             </div>
           </div>
         </div>

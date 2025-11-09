@@ -7,7 +7,7 @@ export default function MemoriesSection() {
   return (
     <section className="memories-section-outer">
       <div className="memories-frame">
-        <div className="memories-icon-paper">
+        <div>
           <img src={IconPD} alt="IconPD" className="memories-pd-icon" />
         </div>
 

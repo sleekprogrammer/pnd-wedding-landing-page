@@ -44,9 +44,9 @@ export default function GiftSection() {
           <div className="gift-text-paper">
             <p>
               <span className="gift-text-bold">
-                A vossa presença é o nosso melhor presente, <br />
+                A vossa presença é o nosso melhor presente <br />
               </span>
-              mas se desejarem contribuir, poderão <br />
+              mas, se desejarem contribuir, poderão <br />
               fazê-lo monetariamente no nosso dia <br />
               ou através do nosso iban:
             </p>
