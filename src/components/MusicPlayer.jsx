@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pause, Play } from 'lucide-react';
 
-import Song from '../assets/music/Alex Warren - Ordinary.mp3';
+import Song from '../assets/music/do raso ao fundo.mp3';
 
 export default function MusicPlayer({ isPlaying, onClick, audioRef }) {
   return (
