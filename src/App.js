@@ -27,6 +27,7 @@ export default function App() {
   const audioRef = useRef();
   const [isPlaying, setIsPlaying] = useState(false);
 
+  // Toggle play/pause audio
   const togglePlayPause = () => {
     if (!audioRef.current) return;
     if (audioRef.current.paused) {
@@ -37,6 +38,7 @@ export default function App() {
     }
   };
 
+  // Autoplay audio on first user interaction
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.5;
