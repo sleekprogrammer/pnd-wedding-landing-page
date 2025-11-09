@@ -1,0 +1,59 @@
+/* CountdownClock component */
+.countdown-clock {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 15px;
+}
+
+.countdown-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 54px;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  color: #48321A;
+  margin-bottom: 4px;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: #48321A;
+  opacity: 0.84;
+  font-family: 'Josefin Slab', serif;
+}
+
+.countdown-divider {
+  width: 1px;
+  height: 38px;
+  background: #B3A491;
+  align-self: flex-end;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+/* Responsive tweak for narrower screens */
+@media (max-width: 400px) {
+  .countdown-clock {
+    gap: 10px;
+  }
+  .countdown-value {
+    min-width: 38px;
+  }
+  .countdown-number {
+    font-size: 1.2rem;
+  }
+  .countdown-label {
+    font-size: 0.9rem;
+  }
+  .countdown-divider {
+    height: 30px;
+    margin-bottom: 16px;
+  }
+}
