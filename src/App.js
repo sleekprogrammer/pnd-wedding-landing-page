@@ -9,6 +9,7 @@ import './styles/CelebrationSection.css';
 import './styles/ConfirmationSection.css';
 import './styles/GiftSection.css';
 import './styles/MemoriesSection.css';
+import './styles/FinalSection.css';
 
 import MusicPlayer from './components/MusicPlayer';
 import NextSection from './components/NextSection';
@@ -19,6 +20,7 @@ import CelebrationSection from './components/CelebrationSection';
 import ConfirmationSection from './components/ConfirmationSection';
 import GiftSection from './components/GiftSection';
 import MemoriesSection from './components/MemoriesSection';
+import FinalSection from './components/FinalSection';
 
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -49,6 +51,7 @@ export default function App() {
       <ConfirmationSection />
       <GiftSection />
       <MemoriesSection />
+      <FinalSection />
       <NextSection />
     </div>
   );

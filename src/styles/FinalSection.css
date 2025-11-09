@@ -1,5 +1,5 @@
-/* Welcome Section */
-.welcome-section-outer {
+/* Final Section */
+.final-section-outer {
   position: relative;
   width: 100vw;
   min-height: 100vh;
@@ -11,7 +11,7 @@
   padding: 0;
 }
 
-.welcome-frame {
+.final-frame {
   position: relative;
   width: calc(100vw - 50px);
   margin: 25px;
@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-.welcome-image-torn-top {
+.final-image-torn-top {
   position: absolute;
   top: -24px;
   left: 0;
@@ -35,7 +35,7 @@
   overflow: visible;
 }
 
-.welcome-image-torn-edge {
+.final-image-torn-edge {
   width: 100%;
   height: 160%;
   object-fit: cover;
@@ -43,7 +43,7 @@
   border: none;
 }
 
-.welcome-frame-content {
+.final-frame-content {
   position: relative;
   width: 100%;
   max-width: 420px;
@@ -58,11 +58,11 @@
   padding-bottom: 2rem;
 }
 
-.welcome-icon-paper {
+.final-icon-paper {
   margin-bottom: 1.5rem;
 }
 
-.welcome-icon-img {
+.final-icon-img {
   width: 107px;
   height: 108px;
   object-fit: contain;
@@ -71,7 +71,7 @@
   fill: currentColor;
 }
 
-.welcome-text-paper {
+.final-text-paper {
   color: #2D1C01;
   font-family: 'Josefin Slab', serif;
   font-size: 1.18rem;
@@ -81,22 +81,22 @@
   line-height: 1.35;
 }
 
-.welcome-text-paper p {
+.final-text-paper p {
   margin: 0;
   margin-bottom: 1.7rem;
 }
 
-.welcome-text-paper p:last-child {
+.final-text-paper p:last-child {
   margin-bottom: 0;
 }
 
-.welcome-text-bold {
+.final-text-bold {
   font-weight: 600;
 }
 
 /* Responsive style: adjust image height and content padding for wide, low screens */
 @media (min-width: 1000px) and (max-width: 1400px) {
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     width: 100%;
     left: 0;
     right: 0;
@@ -105,27 +105,27 @@
     max-height: 300px;
     object-fit: cover;
   }
-  .welcome-frame-content {
+  .final-frame-content {
     padding-top: 34vh;
   }
 }
 
 /* Responsive style: adjust image height and content padding for tablets */
 @media (min-width: 700px) and (max-width: 1200px) {
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     margin-top: -18px;
     height: 44vh;
     min-height: 320px;
     max-height: 480px;
   }
-  .welcome-frame-content {
+  .final-frame-content {
     padding-top: 48vh;
     margin-top: 130px;
   }
 }
 
 @media (min-height: 720px) {
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     margin-top: -5px;
     height: 44vh;
     width: 50vh;
@@ -136,7 +136,7 @@
 
 /* Responsive style: adjust image height and content padding for tall, narrow screens */
 @media (min-height: 940px) and (max-width: 1200px) {
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     margin-top: -18px;
     height: 44vh;
     width: 70vh;
@@ -144,44 +144,44 @@
     max-height: 480px;
     scale: 1.05;
   }
-  .welcome-frame-content {
+  .final-frame-content {
     padding-top: 48vh;
   }
 }
 
 /* Responsive style: make image taller and content lower for smaller screens */
 @media (max-width: 900px) {
-  .welcome-frame {
+  .final-frame {
     width: calc(100vw - 6px);
     min-height: 96vh;
   }
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     height: 100vh;
   }
-  .welcome-frame-content {
+  .final-frame-content {
     padding-top: 50vh;
   }
 }
 
 @media (max-width: 768px) {
-  .welcome-text {
+  .final-text {
     font-size: 18px;
   }
 }
 
 @media (max-width: 600px) {
-  .welcome-image-torn-top {
+  .final-image-torn-top {
     height: 61vw;
     min-height: 240px;
     max-height: 62vh;
   }
-  .welcome-frame-content {
+  .final-frame-content {
     padding-top: 100vw;
   }
 }
 
 @media (max-width: 375px) {
-  .welcome-text-paper {
+  .final-text-paper {
     padding: 1rem;
   }
 }
