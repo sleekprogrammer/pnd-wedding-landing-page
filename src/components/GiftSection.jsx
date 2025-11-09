@@ -65,20 +65,31 @@ export default function GiftSection() {
             </p>
 
             <p>
-              <button
-                type="button"
-                className="gift-iban-wrapper"
-                onClick={copyToClipboard}
-                onTouchEnd={copyToClipboard}  
-                aria-label="Copiar IBAN"
-              >
-                <span className="gift-text-iban">
-                  {iban}<br />
-                </span>
-                <span className="gift-text-aux">
-                  (toque para copiar)
-                </span>
-              </button>
+              <div className="gift-iban-wrapper" style={{ /* your custom styles */ }}>
+                <button
+                  type="button"
+                  onClick={copyToClipboard}
+                  onTouchEnd={copyToClipboard}
+                  aria-label="Copiar IBAN"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    margin: 0,
+                    width: "100%",
+                    color: "inherit",
+                    font: "inherit",
+                    cursor: "pointer"
+                  }}
+                >
+                  <span className="gift-text-iban">
+                    {iban}<br />
+                  </span>
+                  <span className="gift-text-aux">
+                    (toque para copiar)
+                  </span>
+                </button>
+              </div>
             </p>
           </div>
           <div id="toast" className="toast"></div>

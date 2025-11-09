@@ -87,7 +87,20 @@
 }
 
 .gift-iban-wrapper {
+  /* Inherit custom margin & spacing */
   margin-top: 55px;
+  /* Reset button styles */
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.gift-iban-wrapper:active,
+.gift-iban-wrapper:focus {
+  background: #edeadc;
+  border-color: #6e583b;
 }
 
 .gift-text-iban {
