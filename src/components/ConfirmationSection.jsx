@@ -29,8 +29,8 @@ export default function ConfirmationSection() {
             </p>
           </div>
 
-          <div className="confirmation-envelop-section"> {/* TODO: Build external form and update the href */}
-            <a href="https://www.typeform.com/" target="_blank" rel="noopener noreferrer">
+          <div className="confirmation-envelop-section">
+            <a href="https://forms.gle/wPek64pmvUf1VSfN9" target="_blank" rel="noopener noreferrer">
               <img src={EnvelopIcon} alt="Envelop" className="confirmation-envelop-icon" />
             </a>
           </div>
