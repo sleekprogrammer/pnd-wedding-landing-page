@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   box-sizing: border-box;
   z-index: 1;
   overflow: hidden;
@@ -183,5 +184,29 @@
 @media (max-width: 375px) {
   .welcome-text-paper {
     padding: 1rem;
+  }
+}
+
+/* Responsive style: adjust image height and content padding for desktop screens */
+@media (min-width: 1600px) and (min-height: 800px) {
+  .welcome-section-outer {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .welcome-image-torn-top {
+    margin-top: -50px;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 100vh;
+    height: 100vh;
+    min-height: 400px;
+  }
+
+  .welcome-frame-content {
+    padding-top: 70vh;
+    padding-bottom: 2rem;
   }
 }

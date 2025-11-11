@@ -185,3 +185,27 @@
     padding: 1rem;
   }
 }
+
+/* Responsive style: adjust image height and content padding for desktop screens */
+@media (min-width: 1600px) and (min-height: 800px) {
+  .final-section-outer {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .final-image-torn-top {
+    margin-top: -38px;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 70vh;
+    height: 100vh;
+    min-height: 300px;
+  }
+
+  .final-frame-content {
+    padding-top: 70vh;
+    padding-bottom: 2rem;
+  }
+}
