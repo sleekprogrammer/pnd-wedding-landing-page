@@ -44,18 +44,25 @@ export default function App() {
       audioRef.current.volume = 0.5;
     }
 
+    const removeListeners = () => {
+      document.removeEventListener("click", playAudioOnInteraction);
+      document.removeEventListener("touchstart", playAudioOnInteraction);
+      window.removeEventListener("scroll", playAudioOnInteraction);
+    };
+
     const playAudioOnInteraction = () => {
       if (audioRef.current && audioRef.current.paused) {
         audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
-        document.removeEventListener("click", playAudioOnInteraction);
-        document.removeEventListener("touchstart", playAudioOnInteraction);
+        removeListeners();
       }
     };
+
     document.addEventListener("click", playAudioOnInteraction, { once: true });
     document.addEventListener("touchstart", playAudioOnInteraction, { once: true });
+    window.addEventListener("scroll", playAudioOnInteraction, { once: true });
+
     return () => {
-      document.removeEventListener("click", playAudioOnInteraction);
-      document.removeEventListener("touchstart", playAudioOnInteraction);
+      removeListeners();
     };
   }, []);
 
