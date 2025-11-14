@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pnd-wedding-landing-page/static/css/main.e5b15834.css",
-    "main.js": "/pnd-wedding-landing-page/static/js/main.4679623b.js",
+    "main.js": "/pnd-wedding-landing-page/static/js/main.b49ca03f.js",
     "static/media/do raso ao fundo.mp3": "/pnd-wedding-landing-page/static/media/do raso ao fundo.3b988777d9dd536bd076.mp3",
     "static/media/welcome-bg.png": "/pnd-wedding-landing-page/static/media/welcome-bg.8969f803669fc6af9190.png",
     "static/media/texture-pattern.jpg": "/pnd-wedding-landing-page/static/media/texture-pattern.307eba4ddb92ccbf335a.jpg",
@@ -23,10 +23,10 @@
     "static/media/flower-icon-2.svg": "/pnd-wedding-landing-page/static/media/flower-icon-2.8a8edc5c6aea3a7b906e258dd26c331c.svg",
     "index.html": "/pnd-wedding-landing-page/index.html",
     "main.e5b15834.css.map": "/pnd-wedding-landing-page/static/css/main.e5b15834.css.map",
-    "main.4679623b.js.map": "/pnd-wedding-landing-page/static/js/main.4679623b.js.map"
+    "main.b49ca03f.js.map": "/pnd-wedding-landing-page/static/js/main.b49ca03f.js.map"
   },
   "entrypoints": [
     "static/css/main.e5b15834.css",
-    "static/js/main.4679623b.js"
+    "static/js/main.b49ca03f.js"
   ]
 }
