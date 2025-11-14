@@ -4,7 +4,7 @@ import FlowerIcon from "../assets/icons/flower-icon-2.svg";
 import EnvelopIcon from "../assets/icons/gift-envelop.svg";
 
 export default function GiftSection() {
-  const iban = "PT50 0000 0000 0000 0000 0000 00";
+  const iban = "PT50 0018 0008 0086 3398 0201 7";
 
   const showToast = (message) => {
     const toast = document.getElementById("toast");

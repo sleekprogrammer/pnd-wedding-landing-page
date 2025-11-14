@@ -25,8 +25,8 @@ export default function MemoriesSection() {
             </p>
           </div>
 
-          <div className="memories-upload-section"> {/* TODO: Replace test folder link with actual link */}
-            <a href="https://drive.google.com/drive/folders/1EEG-I1ocLaMoIBipxmN-yqMDl-XoudTS?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <div className="memories-upload-section">
+            <a href="https://drive.google.com/drive/folders/1FRaxMmK-oAnlNRZgxtqnKwtiMVIJrIMv" target="_blank" rel="noopener noreferrer">
               <img src={PhotoIcon} alt="Upload" className="memories-upload-icon" />
             </a>
           </div>
